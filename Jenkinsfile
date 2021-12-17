@@ -30,5 +30,10 @@ pipeline {
                sh './gradlew assembleRelease'
              }
         }
+        stage('Unit Tests'){
+             steps{
+               sh './gradlew test'
+             }
+        }
     }
 }
